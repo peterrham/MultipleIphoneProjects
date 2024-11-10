@@ -1,17 +1,17 @@
 //
-//  V1NoScopesApp.swift
-//  V1NoScopesApp
+//  V2NoScopesAppApp.swift
+//  V2NoScopesApp
 //
 //  Created by Ham, Peter on 11/10/24.
 //
+
 import SwiftUI
 
 @main
-struct V1NoScopesApp: App {
+struct V2NoScopesAppApp: App {
     var body: some Scene {
         WindowGroup {
-            Text("Hello, World!")
-            Text("Text 2")
+            ContentView()
         }
     }
 }

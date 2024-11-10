@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BEA20AD52CE16351002BF275 /* V1NoScopesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA20AD42CE16351002BF275 /* V1NoScopesApp.swift */; };
+		BEA20ADA2CE179ED002BF275 /* GoogleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA20AD92CE179ED002BF275 /* GoogleSignInManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEA20ABF2CE15F0E002BF275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA20AD42CE16351002BF275 /* V1NoScopesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1NoScopesApp.swift; sourceTree = "<group>"; };
+		BEA20AD92CE179ED002BF275 /* GoogleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
 		C3702079B8E995D8B6CAF69A /* V1NoScopesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V1NoScopesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -28,6 +30,7 @@
 		B1401356BD97B5C13E0B9B1B = {
 			isa = PBXGroup;
 			children = (
+				BEA20AD92CE179ED002BF275 /* GoogleSignInManager.swift */,
 				BEA20ABF2CE15F0E002BF275 /* Info.plist */,
 				90B6D13C61972A0E0D7E496F /* Products */,
 				BEA20AD42CE16351002BF275 /* V1NoScopesApp.swift */,
@@ -75,6 +78,9 @@
 				en,
 			);
 			mainGroup = B1401356BD97B5C13E0B9B1B;
+			packageReferences = (
+				BEA20AD62CE175E2002BF275 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -88,6 +94,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA20ADA2CE179ED002BF275 /* GoogleSignInManager.swift in Sources */,
 				BEA20AD52CE16351002BF275 /* V1NoScopesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +280,17 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEA20AD62CE175E2002BF275 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8731097CF7A5D8B03EE0F6C6 /* Project object */;
 }
