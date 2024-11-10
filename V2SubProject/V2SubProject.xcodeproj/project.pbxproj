@@ -10,9 +10,22 @@
 		BE4C146D2CDFC69D00FE3159 /* V2SubProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V2SubProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BE4C14942CDFCA5C00FE3159 /* Exceptions for "V2SubProject" folder in "V2SubProject" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BE4C146C2CDFC69D00FE3159 /* V2SubProject */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BE4C146F2CDFC69D00FE3159 /* V2SubProject */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BE4C14942CDFCA5C00FE3159 /* Exceptions for "V2SubProject" folder in "V2SubProject" target */,
+			);
 			path = V2SubProject;
 			sourceTree = "<group>";
 		};
@@ -254,7 +267,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"V2SubProject/Preview Content\"";
 				DEVELOPMENT_TEAM = BX37W36VT3;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = V2SubProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -283,7 +297,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"V2SubProject/Preview Content\"";
 				DEVELOPMENT_TEAM = BX37W36VT3;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = V2SubProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
