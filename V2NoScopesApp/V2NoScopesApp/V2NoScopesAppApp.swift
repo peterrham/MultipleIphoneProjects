@@ -1,17 +1,18 @@
-//
-//  V2NoScopesAppApp.swift
-//  V2NoScopesApp
-//
-//  Created by Ham, Peter on 11/10/24.
-//
-
 import SwiftUI
+import GoogleSignIn
 
 @main
-struct V2NoScopesAppApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct V2NoScopesApp: App {
+        @StateObject private var googleSignInManager = GoogleSignInManager(clientID: "748381179204-hp1qqcpa5jr929nj0hs6sou0sb6df60a.apps.googleusercontent.com")
+    
+    init() {
+        GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: "748381179204-hp1qqcpa5jr929nj0hs6sou0sb6df60a.apps.googleusercontent.com")
+    }
+    
+        var body: some Scene {
+            WindowGroup {
+                ContentView()
+                    .environmentObject(googleSignInManager)
+            }
         }
     }
-}

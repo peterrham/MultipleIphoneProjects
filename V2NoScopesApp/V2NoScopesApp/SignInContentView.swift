@@ -1,6 +1,14 @@
+//
+//  ContentView 2.swift
+//  V2NoScopesApp
+//
+//  Created by Ham, Peter on 11/10/24.
+//
+
+
 import SwiftUI
 
-struct ContentView: View {
+struct SignInContentView: View {
     @EnvironmentObject var googleSignInManager: GoogleSignInManager
 
     var body: some View {
