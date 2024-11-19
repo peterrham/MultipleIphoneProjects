@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		BE0C0CCE2CEBB47700BF52E5 /* RecognizeBarCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecognizeBarCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE78CDAE2CED36CA00D2E9D4 /* BarcodeFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeFeedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECA65CF2CE6D0120026456A /* V1FrameByFrameVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V1FrameByFrameVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE013862CE5DC42003B2B87 /* V1ObjRecog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V1ObjRecog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -42,6 +43,11 @@
 			path = RecognizeBarCode;
 			sourceTree = "<group>";
 		};
+		BE78CDAF2CED36CA00D2E9D4 /* BarcodeFeedback */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BarcodeFeedback;
+			sourceTree = "<group>";
+		};
 		BECA65D02CE6D0130026456A /* V1FrameByFrameVision */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = V1FrameByFrameVision;
@@ -59,6 +65,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		BE0C0CCB2CEBB47700BF52E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE78CDAB2CED36CA00D2E9D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,6 +101,7 @@
 				BEE013882CE5DC42003B2B87 /* V1ObjRecog */,
 				BECA65D02CE6D0130026456A /* V1FrameByFrameVision */,
 				BE0C0CCF2CEBB47700BF52E5 /* RecognizeBarCode */,
+				BE78CDAF2CED36CA00D2E9D4 /* BarcodeFeedback */,
 				BEE013872CE5DC42003B2B87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +112,7 @@
 				BEE013862CE5DC42003B2B87 /* V1ObjRecog.app */,
 				BECA65CF2CE6D0120026456A /* V1FrameByFrameVision.app */,
 				BE0C0CCE2CEBB47700BF52E5 /* RecognizeBarCode.app */,
+				BE78CDAE2CED36CA00D2E9D4 /* BarcodeFeedback.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +140,28 @@
 			);
 			productName = RecognizeBarCode;
 			productReference = BE0C0CCE2CEBB47700BF52E5 /* RecognizeBarCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE78CDAD2CED36CA00D2E9D4 /* BarcodeFeedback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE78CDBB2CED36CB00D2E9D4 /* Build configuration list for PBXNativeTarget "BarcodeFeedback" */;
+			buildPhases = (
+				BE78CDAA2CED36CA00D2E9D4 /* Sources */,
+				BE78CDAB2CED36CA00D2E9D4 /* Frameworks */,
+				BE78CDAC2CED36CA00D2E9D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BE78CDAF2CED36CA00D2E9D4 /* BarcodeFeedback */,
+			);
+			name = BarcodeFeedback;
+			packageProductDependencies = (
+			);
+			productName = BarcodeFeedback;
+			productReference = BE78CDAE2CED36CA00D2E9D4 /* BarcodeFeedback.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BECA65CE2CE6D0120026456A /* V1FrameByFrameVision */ = {
@@ -184,6 +221,9 @@
 					BE0C0CCD2CEBB47700BF52E5 = {
 						CreatedOnToolsVersion = 16.1;
 					};
+					BE78CDAD2CED36CA00D2E9D4 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					BECA65CE2CE6D0120026456A = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -209,12 +249,20 @@
 				BEE013852CE5DC42003B2B87 /* V1ObjRecog */,
 				BECA65CE2CE6D0120026456A /* V1FrameByFrameVision */,
 				BE0C0CCD2CEBB47700BF52E5 /* RecognizeBarCode */,
+				BE78CDAD2CED36CA00D2E9D4 /* BarcodeFeedback */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BE0C0CCC2CEBB47700BF52E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE78CDAC2CED36CA00D2E9D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,6 +287,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		BE0C0CCA2CEBB47700BF52E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE78CDAA2CED36CA00D2E9D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,6 +370,64 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Test-Organization.RecognizeBarCode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE78CDB92CED36CB00D2E9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BarcodeFeedback/Preview Content\"";
+				DEVELOPMENT_TEAM = BX37W36VT3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Organization.BarcodeFeedback";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE78CDBA2CED36CB00D2E9D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BarcodeFeedback/Preview Content\"";
+				DEVELOPMENT_TEAM = BX37W36VT3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Organization.BarcodeFeedback";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -569,6 +682,15 @@
 			buildConfigurations = (
 				BE0C0CD92CEBB47800BF52E5 /* Debug */,
 				BE0C0CDA2CEBB47800BF52E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE78CDBB2CED36CB00D2E9D4 /* Build configuration list for PBXNativeTarget "BarcodeFeedback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE78CDB92CED36CB00D2E9D4 /* Debug */,
+				BE78CDBA2CED36CB00D2E9D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
