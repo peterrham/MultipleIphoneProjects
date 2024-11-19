@@ -15,6 +15,7 @@
 /* Begin PBXFileReference section */
 		BEA20AF02CE17C59002BF275 /* V2NoScopesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V2NoScopesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA20B062CE18020002BF275 /* GoogleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
+		BEAB826A2CE1E41A00B3ED92 /* V2NoScopesApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = V2NoScopesApp.xcodeproj; path = V2NoScopesApp/V2NoScopesApp.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -64,6 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				BEA20AF02CE17C59002BF275 /* V2NoScopesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEAB826D2CE1E41A00B3ED92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +133,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BEA20AF12CE17C59002BF275 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BEAB826D2CE1E41A00B3ED92 /* Products */;
+					ProjectRef = BEAB826A2CE1E41A00B3ED92 /* V2NoScopesApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BEA20AEF2CE17C59002BF275 /* V2NoScopesApp */,

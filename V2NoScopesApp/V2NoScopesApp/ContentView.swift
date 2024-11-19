@@ -5,6 +5,16 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
+            Button("createSpreadsheet") {
+                googleSignInManager.createSpreadsheet()
+                }
+         Button("Disconect") {
+                googleSignInManager.disconnect()
+                }
+            Button("FetchUserInfo") {
+                googleSignInManager.fetchAndPrintUserInfo()
+                }
+            
             if let user = googleSignInManager.user {
                 Text("Hello, \(user.profile?.name ?? "User")!")
                 Button("Sign Out") {
