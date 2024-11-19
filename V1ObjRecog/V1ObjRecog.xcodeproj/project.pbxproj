@@ -23,6 +23,14 @@
 			);
 			target = BE0C0CCD2CEBB47700BF52E5 /* RecognizeBarCode */;
 		};
+		BE78CDFF2CED4C6400D2E9D4 /* Exceptions for "BarcodeFeedback" folder in "BarcodeFeedback" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BarcodeFeedbackApp.swift,
+				ContentView.swift,
+			);
+			target = BE78CDAD2CED36CA00D2E9D4 /* BarcodeFeedback */;
+		};
 		BECA65E22CE6D2DA0026456A /* Exceptions for "V1ObjRecog" folder in "V1FrameByFrameVision" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -45,6 +53,9 @@
 		};
 		BE78CDAF2CED36CA00D2E9D4 /* BarcodeFeedback */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BE78CDFF2CED4C6400D2E9D4 /* Exceptions for "BarcodeFeedback" folder in "BarcodeFeedback" target */,
+			);
 			path = BarcodeFeedback;
 			sourceTree = "<group>";
 		};
@@ -388,6 +399,7 @@
 				DEVELOPMENT_TEAM = BX37W36VT3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = Needed.;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -417,6 +429,7 @@
 				DEVELOPMENT_TEAM = BX37W36VT3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = Needed.;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

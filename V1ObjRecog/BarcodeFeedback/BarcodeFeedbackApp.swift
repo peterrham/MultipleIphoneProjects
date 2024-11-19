@@ -61,7 +61,7 @@ class BarcodeScannerv2: NSObject, ObservableObject {
     let captureSessionv2 = AVCaptureSession()
     private let videoOutputv2 = AVCaptureVideoDataOutput()
     private let queuev2 = DispatchQueue(label: "BarcodeScannerQueuev2")
-    private weak var overlayLayerv2: CALayer?
+    public weak var overlayLayerv2: CALayer?
 
     override init() {
         print("BarcodeScannerv2: init called")
