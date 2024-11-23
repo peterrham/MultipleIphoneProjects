@@ -18,6 +18,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ContentView.swift,
+				ContentView3.swift,
 				ContentViewv2.swift,
 				RecognizeBarCodeApp.swift,
 			);
@@ -26,8 +27,13 @@
 		BE78CDFF2CED4C6400D2E9D4 /* Exceptions for "BarcodeFeedback" folder in "BarcodeFeedback" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Appv4.swift,
+				AppV5.swift,
 				BarcodeFeedbackApp.swift,
+				CameraPreviewApp.swift,
+				"ContentView 2.swift",
 				ContentView.swift,
+				ContentViewV3.swift,
 			);
 			target = BE78CDAD2CED36CA00D2E9D4 /* BarcodeFeedback */;
 		};
@@ -39,6 +45,13 @@
 				Resnet50.mlmodel,
 			);
 			target = BECA65CE2CE6D0120026456A /* V1FrameByFrameVision */;
+		};
+		BEE339FB2CF1603B00702D22 /* Exceptions for "BarcodeFeedback" folder in "RecognizeBarCode" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppV5.swift,
+			);
+			target = BE0C0CCD2CEBB47700BF52E5 /* RecognizeBarCode */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -54,6 +67,7 @@
 		BE78CDAF2CED36CA00D2E9D4 /* BarcodeFeedback */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				BEE339FB2CF1603B00702D22 /* Exceptions for "BarcodeFeedback" folder in "RecognizeBarCode" target */,
 				BE78CDFF2CED4C6400D2E9D4 /* Exceptions for "BarcodeFeedback" folder in "BarcodeFeedback" target */,
 			);
 			path = BarcodeFeedback;
