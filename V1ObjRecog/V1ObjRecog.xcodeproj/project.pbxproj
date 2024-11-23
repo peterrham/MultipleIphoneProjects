@@ -30,6 +30,7 @@
 				Appv4.swift,
 				AppV5.swift,
 				BarcodeFeedbackApp.swift,
+				BarcodePreviewApp.swift,
 				CameraPreviewApp.swift,
 				"ContentView 2.swift",
 				ContentView.swift,
