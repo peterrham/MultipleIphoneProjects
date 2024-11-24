@@ -38,9 +38,9 @@ struct ContentView: View {
             VStack {
                 Spacer()
 
-                // Scanned Barcodes
+                // Scanned Barcodes (Reverse Chronological Order)
                 ScrollView {
-                    ForEach(barcodeCollector.detectedBarcodes, id: \.self) { barcode in
+                    ForEach(barcodeCollector.detectedBarcodes.reversed(), id: \.self) { barcode in
                         Text(barcode)
                             .font(.body)
                             .padding()
@@ -74,6 +74,7 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
     @Published var detectedBarcodes: [String] = []
     private var session: AVCaptureSession?
     private var lastDetectedBarcode: String?
+    private var audioEngine: AVAudioEngine?
 
     var captureSession: AVCaptureSession? {
         return session
@@ -141,13 +142,14 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
             }
             print("New barcode detected: \(barcodeValue)")
 
-            // Play a louder beep for new barcode
-            AudioServicesPlaySystemSound(SystemSoundID(1104)) // Loud "Sent Message" sound
+            // Play high-pitched bell sound
+            playHighPitchedBell()
         }
     }
 
     func exportBarcodes() {
-        let csvContent = detectedBarcodes.joined(separator: "\n")
+        // Wrap each barcode in quotes to preserve leading zeros
+        let csvContent = detectedBarcodes.map { "\"\($0)\"" }.joined(separator: "\n")
         let fileName = "Barcodes.csv"
 
         let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent(fileName)
@@ -163,6 +165,51 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
         } catch {
             print("Error exporting barcodes: \(error)")
         }
+    }
+
+    func playHighPitchedBell() {
+        let engine = AVAudioEngine()
+        let mainMixer = engine.mainMixerNode
+        let output = engine.outputNode
+        let sampleRate = Float(engine.outputNode.outputFormat(forBus: 0).sampleRate)
+
+        let sineFrequency: Float = 880.0 // Frequency in Hz (A5)
+        var phase: Float = 0.0
+        let phaseIncrement = (2.0 * Float.pi * sineFrequency) / sampleRate
+
+        let sourceNode = AVAudioSourceNode { _, _, frameCount, audioBufferList -> OSStatus in
+            let bufferPointer = UnsafeMutableAudioBufferListPointer(audioBufferList)
+            for frame in 0..<Int(frameCount) {
+                let value = sin(phase) // Generate sine wave
+                phase += phaseIncrement
+                if phase > 2.0 * Float.pi {
+                    phase -= 2.0 * Float.pi
+                }
+
+                for buffer in bufferPointer {
+                    buffer.mData?.assumingMemoryBound(to: Float.self)[frame] = value * 0.2 // Amplitude
+                }
+            }
+            return noErr
+        }
+
+        engine.attach(sourceNode)
+        engine.connect(sourceNode, to: mainMixer, format: nil)
+        engine.connect(mainMixer, to: output, format: nil)
+
+        do {
+            try engine.start()
+        } catch {
+            print("Error starting audio engine: \(error)")
+        }
+
+        // Play for 0.2 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            engine.stop()
+            self.audioEngine = nil
+        }
+
+        self.audioEngine = engine
     }
 }
 
