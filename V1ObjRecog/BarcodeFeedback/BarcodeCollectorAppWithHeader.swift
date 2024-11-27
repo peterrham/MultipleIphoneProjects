@@ -29,6 +29,7 @@ struct BarcodeCollectorApp: App {
 struct ContentView: View {
     @StateObject private var barcodeCollector = BarcodeCollector()
     @State private var isScanning = true
+    @State private var currentBox: String = "No Box" // Add a state for the current box
 
     var body: some View {
         ZStack {
@@ -44,6 +45,23 @@ struct ContentView: View {
 
             // Overlay UI
             VStack {
+                // Current Box Label and Text Field
+                HStack {
+                    Spacer()
+                    VStack {
+                        Text("Current Box")
+                            .font(.headline)
+                            .padding(.bottom, 4)
+                        
+                        TextField("Enter box name", text: $currentBox)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: 200)
+                    }
+                    Spacer()
+                }
+                .padding(.top, 16)
+
                 Spacer()
 
                 // Scanned Barcodes (Reverse Chronological Order)
