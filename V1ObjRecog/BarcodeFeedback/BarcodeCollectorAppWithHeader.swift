@@ -80,7 +80,7 @@ struct ContentView: View {
 
                 // Export Button
                 Button(action: {
-                    barcodeCollector.exportBarcodes()
+                    barcodeCollector.exportBarcodes(currentBox: currentBox) // Pass currentBox here
                 }) {
                     Text("Export as CSV")
                         .font(.headline)
@@ -172,8 +172,7 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
             playHighPitchedBell()
         }
     }
-
-    func exportBarcodes() {
+    func exportBarcodes(currentBox: String) {
         // Add header with new columns
         let header = "Barcode,Timestamp,Box\n"
 
@@ -184,7 +183,7 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
 
         // Prepare CSV content
         let csvContent = header + detectedBarcodes.map { barcode in
-            "\"\(barcode)\",\"\(now)\",\"No Box\""
+            "\"\(barcode)\",\"\(now)\",\"\(currentBox)\""
         }.joined(separator: "\n")
 
         // Format the file name with a date and time stamp
@@ -206,6 +205,7 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
             print("Error exporting barcodes: \(error)")
         }
     }
+    
     func playHighPitchedBell() {
         let engine = AVAudioEngine()
         let mainMixer = engine.mainMixerNode
