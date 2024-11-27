@@ -29,6 +29,7 @@
 			membershipExceptions = (
 				Appv4.swift,
 				AppV5.swift,
+				BarcodeCollectorApp.swift,
 				BarcodeFeedbackApp.swift,
 				BarcodePreviewApp.swift,
 				CameraPreviewApp.swift,
