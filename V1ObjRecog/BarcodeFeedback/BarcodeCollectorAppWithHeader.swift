@@ -156,12 +156,20 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
     }
 
     func exportBarcodes() {
-        // Add header and barcodes to the CSV content
-        let header = "Barcode\n"
-        let csvContent = header + detectedBarcodes.map { "\"\($0)\"" }.joined(separator: "\n")
+        // Add header with new columns
+        let header = "Barcode,Timestamp,Box\n"
+
+        // Get current timestamp
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let now = dateFormatter.string(from: Date())
+
+        // Prepare CSV content
+        let csvContent = header + detectedBarcodes.map { barcode in
+            "\"\(barcode)\",\"\(now)\",\"No Box\""
+        }.joined(separator: "\n")
 
         // Format the file name with a date and time stamp
-        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd_HH-mm-ss"
         let dateTimeString = dateFormatter.string(from: Date())
         let fileName = "\(dateTimeString)_Barcodes.csv"
@@ -180,7 +188,6 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
             print("Error exporting barcodes: \(error)")
         }
     }
-
     func playHighPitchedBell() {
         let engine = AVAudioEngine()
         let mainMixer = engine.mainMixerNode
