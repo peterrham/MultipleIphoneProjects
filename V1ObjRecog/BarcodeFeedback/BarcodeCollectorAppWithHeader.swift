@@ -172,6 +172,7 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
             playHighPitchedBell()
         }
     }
+     
     func exportBarcodes(currentBox: String) {
         // Add header with new columns
         let header = "Barcode,Timestamp,Box\n"
@@ -186,10 +187,11 @@ class BarcodeCollector: NSObject, ObservableObject, AVCaptureMetadataOutputObjec
             "\"\(barcode)\",\"\(now)\",\"\(currentBox)\""
         }.joined(separator: "\n")
 
-        // Format the file name with a date and time stamp
+        // Format the file name with the box name and date-time stamp
         dateFormatter.dateFormat = "yyyy-MM-dd_HH-mm-ss"
         let dateTimeString = dateFormatter.string(from: Date())
-        let fileName = "\(dateTimeString)_Barcodes.csv"
+        let sanitizedBoxName = currentBox.replacingOccurrences(of: " ", with: "_") // Replace spaces with underscores
+        let fileName = "\(sanitizedBoxName)_\(dateTimeString)_Barcodes.csv"
 
         let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent(fileName)
         do {

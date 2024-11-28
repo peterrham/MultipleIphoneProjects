@@ -8,12 +8,20 @@
 
 /* Begin PBXFileReference section */
 		BE0C0CCE2CEBB47700BF52E5 /* RecognizeBarCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecognizeBarCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2B45012CF8C8760000D04B /* Photo To Google Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo To Google Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE78CDAE2CED36CA00D2E9D4 /* BarcodeFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeFeedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECA65CF2CE6D0120026456A /* V1FrameByFrameVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V1FrameByFrameVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE013862CE5DC42003B2B87 /* V1ObjRecog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V1ObjRecog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BE2B45122CF8CA340000D04B /* Exceptions for "Photo To Google Drive" folder in "Photo To Google Drive" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+			);
+			target = BE2B45002CF8C8760000D04B /* Photo To Google Drive */;
+		};
 		BE5CCD2C2CEBC4070000D0A5 /* Exceptions for "RecognizeBarCode" folder in "RecognizeBarCode" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -66,6 +74,14 @@
 			path = RecognizeBarCode;
 			sourceTree = "<group>";
 		};
+		BE2B45022CF8C8760000D04B /* Photo To Google Drive */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BE2B45122CF8CA340000D04B /* Exceptions for "Photo To Google Drive" folder in "Photo To Google Drive" target */,
+			);
+			path = "Photo To Google Drive";
+			sourceTree = "<group>";
+		};
 		BE78CDAF2CED36CA00D2E9D4 /* BarcodeFeedback */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -92,6 +108,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		BE0C0CCB2CEBB47700BF52E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2B44FE2CF8C8760000D04B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -129,6 +152,7 @@
 				BECA65D02CE6D0130026456A /* V1FrameByFrameVision */,
 				BE0C0CCF2CEBB47700BF52E5 /* RecognizeBarCode */,
 				BE78CDAF2CED36CA00D2E9D4 /* BarcodeFeedback */,
+				BE2B45022CF8C8760000D04B /* Photo To Google Drive */,
 				BEE013872CE5DC42003B2B87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -140,6 +164,7 @@
 				BECA65CF2CE6D0120026456A /* V1FrameByFrameVision.app */,
 				BE0C0CCE2CEBB47700BF52E5 /* RecognizeBarCode.app */,
 				BE78CDAE2CED36CA00D2E9D4 /* BarcodeFeedback.app */,
+				BE2B45012CF8C8760000D04B /* Photo To Google Drive.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +192,28 @@
 			);
 			productName = RecognizeBarCode;
 			productReference = BE0C0CCE2CEBB47700BF52E5 /* RecognizeBarCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE2B45002CF8C8760000D04B /* Photo To Google Drive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2B450E2CF8C8770000D04B /* Build configuration list for PBXNativeTarget "Photo To Google Drive" */;
+			buildPhases = (
+				BE2B44FD2CF8C8760000D04B /* Sources */,
+				BE2B44FE2CF8C8760000D04B /* Frameworks */,
+				BE2B44FF2CF8C8760000D04B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BE2B45022CF8C8760000D04B /* Photo To Google Drive */,
+			);
+			name = "Photo To Google Drive";
+			packageProductDependencies = (
+			);
+			productName = "Photo To Google Drive";
+			productReference = BE2B45012CF8C8760000D04B /* Photo To Google Drive.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BE78CDAD2CED36CA00D2E9D4 /* BarcodeFeedback */ = {
@@ -248,6 +295,9 @@
 					BE0C0CCD2CEBB47700BF52E5 = {
 						CreatedOnToolsVersion = 16.1;
 					};
+					BE2B45002CF8C8760000D04B = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					BE78CDAD2CED36CA00D2E9D4 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -277,12 +327,20 @@
 				BECA65CE2CE6D0120026456A /* V1FrameByFrameVision */,
 				BE0C0CCD2CEBB47700BF52E5 /* RecognizeBarCode */,
 				BE78CDAD2CED36CA00D2E9D4 /* BarcodeFeedback */,
+				BE2B45002CF8C8760000D04B /* Photo To Google Drive */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BE0C0CCC2CEBB47700BF52E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2B44FF2CF8C8760000D04B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,6 +372,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		BE0C0CCA2CEBB47700BF52E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2B44FD2CF8C8760000D04B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,6 +462,72 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Test-Organization.RecognizeBarCode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE2B450C2CF8C8770000D04B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Photo To Google Drive/Preview Content\"";
+				DEVELOPMENT_TEAM = BX37W36VT3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Photo-To-Google-Drive-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Organization.Photo-To-Google-Drive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE2B450D2CF8C8770000D04B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Photo To Google Drive/Preview Content\"";
+				DEVELOPMENT_TEAM = BX37W36VT3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Photo-To-Google-Drive-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Organization.Photo-To-Google-Drive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -711,6 +842,15 @@
 			buildConfigurations = (
 				BE0C0CD92CEBB47800BF52E5 /* Debug */,
 				BE0C0CDA2CEBB47800BF52E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2B450E2CF8C8770000D04B /* Build configuration list for PBXNativeTarget "Photo To Google Drive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2B450C2CF8C8770000D04B /* Debug */,
+				BE2B450D2CF8C8770000D04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
