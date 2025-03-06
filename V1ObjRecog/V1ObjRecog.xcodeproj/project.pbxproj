@@ -10,12 +10,13 @@
 		BE0C0CCE2CEBB47700BF52E5 /* RecognizeBarCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecognizeBarCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2B45012CF8C8760000D04B /* Photo To Google Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo To Google Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE78CDAE2CED36CA00D2E9D4 /* BarcodeFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeFeedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE969A272CF8FF520062B3CB /* Photo Directly to Google Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Directly to Google Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECA65CF2CE6D0120026456A /* V1FrameByFrameVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V1FrameByFrameVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE013862CE5DC42003B2B87 /* V1ObjRecog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V1ObjRecog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BE2B45122CF8CA340000D04B /* Exceptions for "Photo To Google Drive" folder in "Photo To Google Drive" target */ = {
+		BE2B45122CF8CA340000D04B /* Exceptions for "Photo To Google Drive Via Share Sheet" folder in "Photo To Google Drive" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ContentView.swift,
@@ -74,12 +75,12 @@
 			path = RecognizeBarCode;
 			sourceTree = "<group>";
 		};
-		BE2B45022CF8C8760000D04B /* Photo To Google Drive */ = {
+		BE2B45022CF8C8760000D04B /* Photo To Google Drive Via Share Sheet */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				BE2B45122CF8CA340000D04B /* Exceptions for "Photo To Google Drive" folder in "Photo To Google Drive" target */,
+				BE2B45122CF8CA340000D04B /* Exceptions for "Photo To Google Drive Via Share Sheet" folder in "Photo To Google Drive" target */,
 			);
-			path = "Photo To Google Drive";
+			path = "Photo To Google Drive Via Share Sheet";
 			sourceTree = "<group>";
 		};
 		BE78CDAF2CED36CA00D2E9D4 /* BarcodeFeedback */ = {
@@ -89,6 +90,11 @@
 				BE78CDFF2CED4C6400D2E9D4 /* Exceptions for "BarcodeFeedback" folder in "BarcodeFeedback" target */,
 			);
 			path = BarcodeFeedback;
+			sourceTree = "<group>";
+		};
+		BE969A282CF8FF520062B3CB /* Photo Directly to Google Drive */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Photo Directly to Google Drive";
 			sourceTree = "<group>";
 		};
 		BECA65D02CE6D0130026456A /* V1FrameByFrameVision */ = {
@@ -128,6 +134,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE969A242CF8FF520062B3CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BECA65CC2CE6D0120026456A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,7 +165,8 @@
 				BECA65D02CE6D0130026456A /* V1FrameByFrameVision */,
 				BE0C0CCF2CEBB47700BF52E5 /* RecognizeBarCode */,
 				BE78CDAF2CED36CA00D2E9D4 /* BarcodeFeedback */,
-				BE2B45022CF8C8760000D04B /* Photo To Google Drive */,
+				BE2B45022CF8C8760000D04B /* Photo To Google Drive Via Share Sheet */,
+				BE969A282CF8FF520062B3CB /* Photo Directly to Google Drive */,
 				BEE013872CE5DC42003B2B87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -165,6 +179,7 @@
 				BE0C0CCE2CEBB47700BF52E5 /* RecognizeBarCode.app */,
 				BE78CDAE2CED36CA00D2E9D4 /* BarcodeFeedback.app */,
 				BE2B45012CF8C8760000D04B /* Photo To Google Drive.app */,
+				BE969A272CF8FF520062B3CB /* Photo Directly to Google Drive.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,7 +222,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				BE2B45022CF8C8760000D04B /* Photo To Google Drive */,
+				BE2B45022CF8C8760000D04B /* Photo To Google Drive Via Share Sheet */,
 			);
 			name = "Photo To Google Drive";
 			packageProductDependencies = (
@@ -236,6 +251,28 @@
 			);
 			productName = BarcodeFeedback;
 			productReference = BE78CDAE2CED36CA00D2E9D4 /* BarcodeFeedback.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE969A262CF8FF520062B3CB /* Photo Directly to Google Drive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE969A322CF8FF530062B3CB /* Build configuration list for PBXNativeTarget "Photo Directly to Google Drive" */;
+			buildPhases = (
+				BE969A232CF8FF520062B3CB /* Sources */,
+				BE969A242CF8FF520062B3CB /* Frameworks */,
+				BE969A252CF8FF520062B3CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BE969A282CF8FF520062B3CB /* Photo Directly to Google Drive */,
+			);
+			name = "Photo Directly to Google Drive";
+			packageProductDependencies = (
+			);
+			productName = "Photo Directly to Google Drive";
+			productReference = BE969A272CF8FF520062B3CB /* Photo Directly to Google Drive.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BECA65CE2CE6D0120026456A /* V1FrameByFrameVision */ = {
@@ -301,6 +338,9 @@
 					BE78CDAD2CED36CA00D2E9D4 = {
 						CreatedOnToolsVersion = 16.1;
 					};
+					BE969A262CF8FF520062B3CB = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					BECA65CE2CE6D0120026456A = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -328,6 +368,7 @@
 				BE0C0CCD2CEBB47700BF52E5 /* RecognizeBarCode */,
 				BE78CDAD2CED36CA00D2E9D4 /* BarcodeFeedback */,
 				BE2B45002CF8C8760000D04B /* Photo To Google Drive */,
+				BE969A262CF8FF520062B3CB /* Photo Directly to Google Drive */,
 			);
 		};
 /* End PBXProject section */
@@ -348,6 +389,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE78CDAC2CED36CA00D2E9D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE969A252CF8FF520062B3CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,6 +434,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE78CDAA2CED36CA00D2E9D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE969A232CF8FF520062B3CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -588,6 +643,64 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Test-Organization.BarcodeFeedback";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE969A332CF8FF530062B3CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Photo Directly to Google Drive/Preview Content\"";
+				DEVELOPMENT_TEAM = BX37W36VT3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Organization.Photo-Directly-to-Google-Drive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE969A342CF8FF530062B3CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Photo Directly to Google Drive/Preview Content\"";
+				DEVELOPMENT_TEAM = BX37W36VT3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Organization.Photo-Directly-to-Google-Drive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -860,6 +973,15 @@
 			buildConfigurations = (
 				BE78CDB92CED36CB00D2E9D4 /* Debug */,
 				BE78CDBA2CED36CB00D2E9D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE969A322CF8FF530062B3CB /* Build configuration list for PBXNativeTarget "Photo Directly to Google Drive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE969A332CF8FF530062B3CB /* Debug */,
+				BE969A342CF8FF530062B3CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
